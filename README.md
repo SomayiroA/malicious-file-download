@@ -37,7 +37,7 @@ My objective was to analyze the file, verify its malicious nature, determine whe
 3. *Endpoint and Network Investigation*: Reviewed endpoint command history and network logs for evidence of payload execution or contact with suspicious infrastructure. The available network investigation showed no confirmed connection to the identified C2 infrastructure. However, other suspicious command activity required further examination.
 
 
-## My Findings, Conclusions, and Recommended Response 🔬
+## My Findings, Conclusions, and my Response 🔬
 
 ### Findings 
 - The document was identified as malicious.
@@ -49,7 +49,7 @@ My objective was to analyze the file, verify its malicious nature, determine whe
 ### Conclusion
 The alert was classified as a True Positive - Blocked malicious download. Although the reported download was blocked, the endpoint should receive further investigation before being declared uncompromised.
 
-### Recommended Response
+### My Response
 1. I quarantined the host machine, deleted the malicious file and searched for related copies.
 2. I nvestigated suspicious PowerShell commands, DLL execution, and potential persistence mechanisms.
 3. I verified whether the endpoint communicated with any identified malicious infrastructure.
@@ -57,14 +57,14 @@ The alert was classified as a True Positive - Blocked malicious download. Althou
 5. I documented the evidence and closed the incident only after the host's status has been established.
 
 
-# Screenshots 📷
+## Screenshots 📷
 
 <img width="580" height="292" alt="Screenshot 2026-10-13 105631" src="https://github.com/user-attachments/assets/84356086-d7dd-45bc-b293-1eeda6810dce" />
 
 <img width="590" height="281" alt="Screenshot 2026-10-13 105640" src="https://github.com/user-attachments/assets/5b2a8915-2f2a-4c2e-83a9-30f5227fa137" />
 
 
-# Lessons Learned 🌿
+## Lessons Learned 🌿
 
 - A blocked download does not automatically prove that an endpoint is uncompromised.
 - Macro-enabled documents can execute PowerShell to retrieve additional payloads.
